@@ -22,7 +22,7 @@ export const BookContainer = styled.div`
 `
 
 export const ButtonLoad = styled.button`
-  background-color: #451475;
+  background-color: #ff6978;
   padding: 1rem 0;
   grid-column: 1/4;
   border-radius: 12px;

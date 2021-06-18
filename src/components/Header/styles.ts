@@ -4,6 +4,8 @@ export const CategoryTitle = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
 
   h1 {
     font-family: 'SFProDisplay';

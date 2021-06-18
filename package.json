@@ -11,8 +11,8 @@
     "test:watch": "yarn test --watch",
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook -s ./public",
-    "postinstall": "husky install"
+    "build-storybook": "build-storybook -s ./public"
+
   },
   "dependencies": {
     "next": "10.1.1",
