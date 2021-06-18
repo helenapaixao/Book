@@ -35,6 +35,7 @@ export function Banner({ id, selected, even }: BannerProps) {
         const { url, options } = GET_BOOK(id)
         try {
           const { json } = await request(url, options)
+          console.log(json)
           setBooks(json)
         } catch (e) {
           console.log(e)
