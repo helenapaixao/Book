@@ -1,8 +1,8 @@
-import { Banner } from '../Banner'
-import { Header } from '../Header'
-import Carousel from 'react-elastic-carousel'
-import * as S from './styles'
 import { useState } from 'react'
+import { Header } from '../Header'
+import { Banner } from '../Banner'
+import * as S from './styles'
+import Carousel from 'react-elastic-carousel'
 
 export function Category() {
   const [selectedCurrentItem, setSelectedCurrentItem] = useState(0)

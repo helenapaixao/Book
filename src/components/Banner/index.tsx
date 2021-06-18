@@ -1,5 +1,5 @@
-import { useRouter } from 'next/dist/client/router'
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/dist/client/router'
 import useService from '../../hooks/useService'
 import { GET_BOOK } from '../../services/api'
 import * as S from './styles'
@@ -42,7 +42,8 @@ export function Banner({ id, selected, even }: BannerProps) {
       }
     }
     getBook()
-  }, [id, request])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [])
 
   if (books) {
     return (

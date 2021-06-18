@@ -12,7 +12,7 @@ export const Container = styled.div<ContainerProps>`
     height: 100%;
     max-height: ${selected ? '139px' : ' 128px'};
     background-color: ${even ? '#451475' : ' #00173d'};
-    background-image: url('/img/oval.png');
+    background-image: url('/images/oval.png');
     background-repeat: no-repeat;
     background-position: bottom left;
     display: grid;
