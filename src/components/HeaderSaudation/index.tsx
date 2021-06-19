@@ -1,5 +1,4 @@
 import * as S from './styles'
-import { HeaderCategory } from '../HeaderCategory'
 
 type SaudationProps = {
   name: string
