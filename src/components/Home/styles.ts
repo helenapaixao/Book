@@ -25,8 +25,8 @@ export const ButtonLoad = styled.button`
   background-color: #ff6978;
   padding: 1rem 0;
   grid-column: 1/4;
-  border-radius: 12px;
-  color: white;
+  border-radius: 5px;
+  color: #00173D;
   border: none;
   font-family: 'SFProText';
   font-weight: bold;

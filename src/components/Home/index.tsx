@@ -40,7 +40,7 @@ export function PrincipalHome() {
     }
   }
 
-  // eslint-disable-next-line no-empty-pattern
+
   const [] = useDebounce(
     () => {
       setLoading(false)

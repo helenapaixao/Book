@@ -4,7 +4,7 @@ import Animation from '../Animation'
 import * as S from './styles'
 
 export function Loading() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+
   const [step, setStep] = useState(0)
 
   useEffect(() => {
