@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Lottie from 'react-lottie'
 import { Container } from './styles'
 
-import animationData from '../../../public/animation/error_404.json'
+import animationData from '../../../../public/animation/error_404.json'
 
 const AnimationError: React.FC = () => {
   const [autoplay] = useState(false)
