@@ -1,7 +1,7 @@
 import { Saudation } from '../SComponent'
 import { Menu } from '../Menu'
-import { Banner } from '../Banner'
-import { RCategory } from '../RCategory'
+import { Banner } from '../BannerBook'
+import { RCategory } from '../CurrentlyCategory'
 import { Review } from '../Review'
 
 import * as S from './styles'

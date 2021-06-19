@@ -1,6 +1,6 @@
 import * as S from './styles'
 
-export function MDetail() {
+export function MenuPageDetail() {
   return (
     <S.Container>
       <S.Wrapper>

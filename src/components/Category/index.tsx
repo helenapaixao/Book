@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Header } from '../Header'
-import { Banner } from '../Banner'
+import { Banner } from '../BannerBook'
 import * as S from './styles'
 import Carousel from 'react-elastic-carousel'
 

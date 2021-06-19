@@ -1,6 +1,5 @@
 
 
-export const API_URL = 'https://www.googleapis.com/books/v1/volumes'
 
 export function GET_BOOK(bookId: string) {
   return {
@@ -14,7 +13,7 @@ export function GET_BOOK(bookId: string) {
 export function SEARCH_BOOKS(query: string, startItem: number) {
   return {
     url:
-      API_URL + '?q=' + query + '&startIndex=' + startItem + '&maxResults=12',
+    'https://www.googleapis.com/books/v1/volumes' + '?q=' + query + '&startIndex=' + startItem + '&maxResults=12',
     options: {
       method: 'GET'
     }

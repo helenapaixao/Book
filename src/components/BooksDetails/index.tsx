@@ -1,14 +1,28 @@
 import { useEffect, useState } from 'react'
 import useService from '../../hooks/useService'
-import { MDetail } from '../MDetail'
+import { MenuPageDetail } from '../MenuPageDetail'
 import { GET_BOOK } from '../../services/api'
-import { BookProps } from '../../types/index'
 import * as S from './styles'
 import { useRouter } from 'next/dist/client/router'
 
 type BookDetailsProps = {
   id: string | undefined
 }
+
+export type BookProps = {
+  id?: string
+  etag?: string
+  volumeInfo: {
+    imageLinks: {
+      thumbnail: string
+    }
+    title: string
+    authors: string[]
+    description: string
+  }
+  onClick: () => void
+}
+
 
 export function BookDetails({ id }: BookDetailsProps) {
   const [books, setBooks] = useState<BookProps>({} as BookProps)
@@ -29,7 +43,7 @@ export function BookDetails({ id }: BookDetailsProps) {
     }
 
     getBook()
-  }, [id, request])
+  }, [])
 
   return (
     <S.Container>
@@ -62,7 +76,7 @@ export function BookDetails({ id }: BookDetailsProps) {
           dangerouslySetInnerHTML={{ __html: books.volumeInfo?.description }}
         ></S.DescriptionWrapper>
       </S.TextWrapper>
-      <MDetail />
+      <MenuPageDetail />
     </S.Container>
   )
 }
