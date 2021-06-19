@@ -12,7 +12,7 @@ type BannerProps = {
 }
 
 type BookProps = {
-  id?: string
+  id: string
   etag?: string
   volumeInfo: {
     imageLinks: {
