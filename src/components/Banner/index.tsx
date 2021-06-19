@@ -3,6 +3,7 @@ import { useRouter } from 'next/dist/client/router'
 import useService from '../../hooks/useService'
 import { GET_BOOK } from '../../services/api'
 import * as S from './styles'
+import { useHistory } from "react-router-dom";
 
 type BannerProps = {
   id: string
@@ -35,7 +36,6 @@ export function Banner({ id, selected, even }: BannerProps) {
         const { url, options } = GET_BOOK(id)
         try {
           const { json } = await request(url, options)
-          console.log(json)
           setBooks(json)
         } catch (e) {
           console.log(e)
@@ -43,8 +43,7 @@ export function Banner({ id, selected, even }: BannerProps) {
       }
     }
     getBook()
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  }, [id, request])
 
   if (books) {
     return (

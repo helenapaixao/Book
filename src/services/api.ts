@@ -1,8 +1,10 @@
+
+
 export const API_URL = 'https://www.googleapis.com/books/v1/volumes'
 
 export function GET_BOOK(bookId: string) {
   return {
-    url: API_URL + '/' + bookId,
+    url: 'https://www.googleapis.com/books/v1/volumes' + '/' + bookId,
     options: {
       method: 'GET'
     }
