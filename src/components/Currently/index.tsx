@@ -1,5 +1,5 @@
 import { useRouter } from 'next/dist/client/router'
-import { Header } from '../Header'
+import { HeaderCategory } from '../HeaderCategory'
 import * as S from './styles'
 
 export function ReadingCategory() {
@@ -7,7 +7,7 @@ export function ReadingCategory() {
 
   return (
     <S.Container>
-      <Header title="Currently Reading" link="All" />
+      <HeaderCategory title="Currently Reading" link="All" />
       <S.Wrapper>
         <img
           src="/img/originals-book.png"

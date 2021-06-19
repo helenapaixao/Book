@@ -1,19 +1,19 @@
-import { Saudation } from '../SComponent'
-import { Menu } from '../Menu'
-import { Banner } from '../BannerBook'
-import { RCategory } from '../CurrentlyCategory'
-import { Review } from '../Review'
+import { HeaderSaudation } from "../HeaderSaudation";
+import { Menu } from "../Menu";
+import { Category } from "../Category";
+import { CurrentlyCategory } from "../CurrentlyCategory";
+import { Review } from "../Review";
 
-import * as S from './styles'
+import * as S from "./styles";
 
 export function Main() {
   return (
     <S.Container>
-      <Saudation name={'Helena Paixão'} />
+      <HeaderSaudation name={"Helena Paixão"} />
       <Menu />
-      <Banner />
-      <RCategory />
+      <Category />
+      <CurrentlyCategory />
       <Review />
     </S.Container>
-  )
+  );
 }

@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { Header } from '../Header'
-import { Banner } from '../BannerBook'
+import { HeaderCategory } from '../HeaderCategory'
+import { BannerBook } from '../BannerBook'
 import * as S from './styles'
 import Carousel from 'react-elastic-carousel'
 
@@ -20,7 +20,7 @@ export function Category() {
 
   return (
     <S.Container>
-      <Header title="Discover new book" link="More" />
+      <HeaderCategory title="Discover new book" link="More" />
       <S.Wrapper>
         <Carousel
           pagination={false}
@@ -34,7 +34,7 @@ export function Category() {
           }}
         >
           {bookList.map((bookBanner) => (
-            <Banner
+            <BannerBook
               key={bookBanner.id}
               id={bookBanner.query}
               selected={bookBanner.id === selectedCurrentItem ? true : false}

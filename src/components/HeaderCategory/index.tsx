@@ -5,7 +5,7 @@ type HeaderProps = {
   link: string
 }
 
-export function Header({ title, link }: HeaderProps) {
+export function HeaderCategory({ title, link }: HeaderProps) {
   return (
     <S.CategoryTitle>
       <h1>{title}</h1>

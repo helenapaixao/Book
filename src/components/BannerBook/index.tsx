@@ -27,7 +27,7 @@ type BannerBookProps = {
 };
 
 
-export function Banner({ id, selected, even }: BannerBookProps) {
+export function BannerBook({ id, selected, even }: BannerBookProps) {
   const [book, setBook] = useState<BookProps>({} as BookProps);
   const router = useRouter();
   const { request } = useService();
