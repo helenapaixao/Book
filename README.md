@@ -101,6 +101,9 @@ Para instalar as dependências e iniciar o projeto, você pode utilizar o Yarn o
 
 ```
 ```
+**Horas utilizadas no projeto**
+
+ -👨‍💻️ 40h
 
 
 
