@@ -10,7 +10,6 @@ export default function DetailPage() {
     <>
       <Head>
         <title>App Books</title>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
       <BookDetails id={id?.toLocaleString()} />
     </>

@@ -13,7 +13,7 @@ export const Container = styled.label`
     top: 0;
     bottom: 0;
     width: 20px;
-    background: url('/img/lupa.svg') center / contain no-repeat;
+    background: url('/img/search.svg') center / contain no-repeat;
   }
 
   input {

@@ -7,11 +7,24 @@ import { Main } from '../Main'
 import { Search } from '../Search'
 import { Books } from '../Books'
 import { Loading } from '../Loading'
-import { BookProps } from '../../types/index'
 
 
 import * as S from './styles'
 
+
+type BookProps = {
+  id?: string
+  etag?: string
+  volumeInfo: {
+    imageLinks: {
+      thumbnail: string
+    }
+    title: string
+    authors: string[]
+    description: string
+  }
+  onClick: () => void
+}
 
 export function PrincipalHome() {
 

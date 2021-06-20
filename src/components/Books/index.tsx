@@ -1,5 +1,20 @@
-import { BookProps } from '../../types/index'
 import * as S from './styles'
+
+
+type BookProps = {
+  id?: string
+  etag?: string
+  volumeInfo: {
+    imageLinks: {
+      thumbnail: string
+    }
+    title: string
+    authors: string[]
+    description: string
+  }
+  onClick: () => void
+}
+
 
 export function Books({ volumeInfo, onClick }: BookProps) {
   return (

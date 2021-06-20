@@ -1,4 +1,3 @@
-/* eslint-disable no-unsafe-finally */
 import React from 'react'
 
 const useService = () => {

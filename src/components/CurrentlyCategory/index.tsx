@@ -1,5 +1,6 @@
 import { useRouter } from 'next/dist/client/router'
 import { HeaderCategory } from '../HeaderCategory'
+
 import * as S from './styles'
 
 export function CurrentlyCategory() {

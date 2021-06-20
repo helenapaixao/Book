@@ -1,10 +1,13 @@
 import { useState } from 'react'
 import { HeaderCategory } from '../HeaderCategory'
 import { BannerBook } from '../BannerBook'
+
 import * as S from './styles'
+
 import Carousel from 'react-elastic-carousel'
 
 export function Category() {
+
   const [selectedCurrentItem, setSelectedCurrentItem] = useState(0)
   const bookList = [
     { id: 0, query: 'R42aBAAAQBAJ' },

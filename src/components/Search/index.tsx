@@ -1,5 +1,4 @@
 import { Dispatch, SetStateAction } from 'react'
-import { BookProps } from '../../types/index'
 import * as S from './styles'
 
 type Search = {
@@ -9,6 +8,22 @@ type Search = {
   setQuery: Dispatch<SetStateAction<string>>
   setBooks: Dispatch<SetStateAction<BookProps[]>>
 }
+
+type BookProps = {
+  id?: string
+  etag?: string
+  volumeInfo: {
+    imageLinks: {
+      thumbnail: string
+    }
+    title: string
+    authors: string[]
+    description: string
+  }
+  onClick: () => void
+}
+
+
 
 export function Search({
   setError,

@@ -5,6 +5,7 @@ import { Container } from './styles'
 import animationData from '../../../public/animation/books.json'
 
 const Animation: React.FC = () => {
+
   const [autoplay] = useState(false)
   const [loop] = useState(true)
   const [direction] = useState(1)

@@ -1,6 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.rec .rec-slider-container {
+  margin: 0 5px;
+}
+
+.rec .rec-swipable {
+  align-items: center;
+}
+
+
 @font-face {
   font-family: "SFProText";
   font-style: normal;
@@ -25,17 +41,3 @@
     url("/fonts/SF-Pro-Display-Bold.otf") format("otf");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  outline: none;
-}
-
-.rec .rec-slider-container {
-  margin: 0 5px;
-}
-
-.rec .rec-swipable {
-  align-items: center;
-}

@@ -1,7 +1,5 @@
-// 404.js
 import React, { useState } from 'react'
 import Lottie from 'react-lottie'
-/* import { Container } from './styles' */
 import animationData from '../../public/animation/error_404.json'
 
 const FourOnFour: React.FC = () => {
