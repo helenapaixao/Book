@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+
 import Animation from '../Animation'
 
 import * as S from './styles'

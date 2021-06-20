@@ -5,11 +5,11 @@ export function MenuPageDetail() {
     <S.Container>
       <S.Wrapper>
         <S.MenuItem>
-          <img src="/img/book-open.svg" alt="Book Open" />
+          <img src="/img/bookopen.svg" alt="Book" />
           <p>Read</p>
         </S.MenuItem>
         <S.MenuItem>
-          <img src="/img/headphones.svg" alt="Headphone" />
+          <img src="/img/phones.svg" alt="Phone" />
           <p>Listen</p>
         </S.MenuItem>
         <S.MenuItem>

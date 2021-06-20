@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import useService from '../../hooks/useService'
+import { useRouter } from 'next/dist/client/router'
 import { useDebounce } from 'react-use'
 import { SEARCH_BOOKS } from '../../services/api'
 import { Main } from '../Main'
@@ -7,10 +8,13 @@ import { Search } from '../Search'
 import { Books } from '../Books'
 import { Loading } from '../Loading'
 import { BookProps } from '../../types/index'
+
+
 import * as S from './styles'
-import { useRouter } from 'next/dist/client/router'
+
 
 export function PrincipalHome() {
+
   const [books, setBooks] = useState<BookProps[]>([])
   const [query, setQuery] = useState('')
   const [error, setError] = useState('')
@@ -41,15 +45,6 @@ export function PrincipalHome() {
   }
 
 
-  const [] = useDebounce(
-    () => {
-      setLoading(false)
-      getBooks(startItem)
-    },
-    1000,
-    [query, startItem]
-  )
-
   function loadMore() {
     if (books.length <= infinite) {
       let newStartItem = 0
@@ -63,6 +58,17 @@ export function PrincipalHome() {
       }
     }
   }
+
+
+  const [] = useDebounce(
+    () => {
+      setLoading(false)
+      getBooks(startItem)
+    },
+    1000,
+    [query, startItem]
+  )
+
 
   return (
     <S.Container>

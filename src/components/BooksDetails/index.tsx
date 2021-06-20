@@ -1,9 +1,13 @@
 import { useEffect, useState } from 'react'
+import { useRouter } from 'next/dist/client/router'
 import useService from '../../hooks/useService'
 import { MenuPageDetail } from '../MenuPageDetail'
+
+
 import { GET_BOOK } from '../../services/api'
+
 import * as S from './styles'
-import { useRouter } from 'next/dist/client/router'
+
 
 type BookDetailsProps = {
   id: string | undefined
